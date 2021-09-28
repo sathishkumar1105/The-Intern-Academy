@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Webchamp</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	        .box input[type="text"], .box input[type="password"]{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #3498db;
+             padding: 14px 10px;
+             width: 300px;
+             outline: none;
+             color: white;
+             border-radius:24px;
+             transition: 0.25s;
+
+
+		}
+		.box input[type="text"]:focus,.box input[type="password"]:focus{
+			width: 280px;
+			border-color: 0.25s;
+			}
+			
+			.box button{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #4c78d9;
+             padding: 14px 10px;
+             outline: none;
+             color: white;
+             border-radius:24px;
+             transition: 0.25s;
+             cursor: pointer;
+             width: 150px;
+			}
+			.box button:hover{
+				background: #4c78d9;
+			}
+          
+	</style>
+</head>
+<body class="bg-dark">
+   <div class="container">
+   	
+	<form class="box mt-5" action="login.html" method="post">
+		<h1 class="text-center text-primary mt-5">Log In</h1>
+	   <input type="text" name="uname" placeholder="username">
+	   <input type="password" name="password" placeholder="Password">
+	   <button onclick="comeBack()">Submit</button>
+	   <button onclick="goBack()">Back</button>
+	</form>
+</div>
+	<script type="text/javascript">
+	
+       function goBack() {
+        window.history.back();
+       }
+       function comeBack() {
+        alert("You have been Sucessfully Login");
+       }
+     
+</script>
+
+	
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

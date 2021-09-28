@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Webchamp</title>
+  <style type="text/css">
+    
+      
+    .form input[type="email"], .form input[type="password"]{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #3498db;
+             padding: 14px 10px;
+             width: 300px;
+             outline: none;
+             color: white;
+             border-radius:24px;
+             transition: 0.25s;
+    }
+    .form input[type="email"]:focus, .form input[type="password"]:focus{
+            width: 280px;
+            border-color: 0.25s;
+            }
+    
+      .form button{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #4c78d9;
+             padding: 14px 10px;
+             cursor: pointer;
+             outline: none;
+             color: white;
+             border-radius:24px;
+             transition: 0.25s;
+             width: 150px;
+             
+    }
+    .form button:hover{
+        background: #4c78d9;
+      }
+      label{
+        font-weight: bold;
+
+      }
+      p{
+        opacity: 0.5;
+      }
+      .condition{
+            color: lightblue;
+      }
+      .condition:hover{
+        color: white;
+        transition: .5s;
+      }
+  </style>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <form class="form mt-5" method="post" action="">
+       <h1 class=" text-center text-primary">Sign In</h1>
+       
+       <div class="container">
+          <input type="email" name="email" placeholder="Email">
+      </div>
+
+      <div class="pass-container">
+         <input type="password" name="Password" placeholder="Enter Password">
+         <input type="password" name="rePassword" placeholder="Repeat Password">
+     </div>
+       <button onclick="comeBack()">Sign In</button>
+       <button onclick="goBack()">Back</button>
+     </form> 
+     
+     <script>
+       function goBack() {
+        window.history.back();
+       }
+       function comeBack(){
+        alert("You have been Sucessfully SignIn");
+       }
+     </script>
+     <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
